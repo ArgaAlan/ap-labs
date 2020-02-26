@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//Primer code challenge
 public class CodeChallenge {
     public static Scanner scanner = new Scanner(System.in);
 
