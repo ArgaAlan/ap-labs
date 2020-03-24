@@ -8,6 +8,7 @@ int mystrfind(char *origin, char *substr);
 
 int main(int argc, char *argv[])
 {
+    //hola
     if (argc < 3)
     {
         printf("Not enought arguments, please provide the main string then the string to add and finally the substring to search.\n");
