@@ -32,3 +32,12 @@ How to submit your work
 GITHUB_USER=<your_github_user>  make submit
 ```
 More details at: [Classify API](../../classify.md)
+
+To compile:
+
+1- gcc -c logger.o -o logger.o
+2- gcc - c testLogger.c -o testLogger.o
+3- gcc logger.o testLogger.o -o test.o
+4- ./test
+
+PROGRAM IS ALREADY COMPILED SO YOU WOULD ONLY NEED TO DO STEP 4
