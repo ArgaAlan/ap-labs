@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include <math.h>
 #include <stdio.h>
+#include <signal.h> 
 
 #define RESET 0
 #define BRIGHT 1
@@ -527,5 +528,6 @@ int panicf(const char *format, ...)
 
     va_end(arg);
     textcolor(RESET, WHITE, BLACK);
+    raise (SIGABRT);
     return 0;
 }
