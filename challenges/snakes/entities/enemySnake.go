@@ -51,10 +51,9 @@ func CreateEnemySnake(g *Game) *EnemySnake {
 //PIPE FUNCTION
 
 func (s *EnemySnake) Behavior() error {
-	dotTime := <-s.behavior
 	for {
+		dotTime := <-s.behavior
 		s.Update(dotTime)
-		dotTime = <-s.behavior
 	}
 	return nil
 }
